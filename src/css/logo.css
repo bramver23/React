@@ -1,0 +1,15 @@
+.onfLogo{
+    /* width: 100%;
+    height: 100px; */
+    width: 15%;
+    float: right;
+    padding-top: 5px;
+    margin: auto;
+    padding: 10px;
+    filter: opacity(0.5) drop-shadow(0 0 0 white);
+}
+.onfLogoBlack{
+    width: 10%;
+    float: right;
+    padding-top: 5px;
+}

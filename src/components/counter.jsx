@@ -47,6 +47,8 @@ class Counter extends Component {
         >
           Delete
         </button>
+        <img className="onfLogo" src={require("../images/onf.png" )}></img>
+
       </React.Fragment>
     );
   }
@@ -63,7 +65,7 @@ class Counter extends Component {
   formatCount() {
     // const { value } = this.state;
     const { value } = this.props.counter;
-    return value === 0 ? "Zero" : value;
+    return value === 0 ? "0" : value;
   }
 }
 

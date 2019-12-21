@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 import Counter from "./counter";
+import "../css/video-react.css";
+import "../css/logo.css";
+import "../css/navbar.css";
+import { Player } from 'video-react';
+
+
 
 class Counters extends Component {
   state = {
     counters: [
-      { id: 1, value: 4 },
-      { id: 2, value: 0 },
-      { id: 3, value: 0 },
-      { id: 4, value: 0 },
-      { id: 5, value: 0 }
+      { id: 1, value: 0 },
     ]
   };
 
@@ -29,7 +31,14 @@ class Counters extends Component {
 
   render() {
     return (
+           
+      
       <div className="d-block p-2 bg-dark text-white">
+           <Player
+      playsInline
+      poster="/assets/poster.png"
+      src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+    />
         {this.state.counters.map(counter => (
           <Counter
             key={counter.id}
@@ -42,6 +51,9 @@ class Counters extends Component {
             <h1>Counter {counter.id}</h1>
           </Counter>
         ))}
+                <span className="onfLogo"
+></span>
+
       </div>
     );
   }
