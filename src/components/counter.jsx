@@ -8,8 +8,9 @@ class Counter extends Component {
   //   };
 
   styles = {
-    fontSize: 50,
-    fontWeight: "bold"
+    fontSize: 30,
+    fontWeight: "bold",
+    margin: "20px"
   };
 
   //   handleIncrement = product => {
@@ -29,26 +30,37 @@ class Counter extends Component {
         {/* <img src={this.state.imageUrl} alt="" /> */}
         {/* {this.props.children} */}
 
-        <span style={this.styles} className={this.getBadgeClasses()}>
+        <div className="title_container">
+          <span className="title">Reserve your seat to watch the ONF best movies</span>
+       
+
+        <span style={this.styles} className={this.getBadgeClasses()} >
           {this.formatCount()}
         </span>
+        
         <button
           onClick={() => {
             // this.handleIncrement(this.state.value);
             this.props.onIncrement(this.props.counter);
           }}
-          className="btn btn-secondary btn-sm"
+          className="buttonClass btn btn-secondary btn-sm m2 reactMargin"
         >
-          Increment
+          Add
         </button>
-        <button
+        
+        {/* <button
           onClick={() => this.props.onDelete(this.props.counter.id)}
           className="btn btn-danger btn-sm m2"
         >
           Delete
-        </button>
-        <img className="onfLogo" src={require("../images/onf.png" )}></img>
+        </button> */}
 
+        <button onClick={()=>this.props.onReset(this.props.counter)}
+          className="btn btn-danger btn-sm m2 reactMargin"
+        >
+          Reset
+        </button>
+        </div>
       </React.Fragment>
     );
   }

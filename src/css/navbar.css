@@ -13,3 +13,32 @@
     padding-left: 0;
     padding-right:0;
 }
+
+.reactMargin{
+    margin:5px;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.title_container{
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+span.title{
+    margin: 30px;
+}
+.buttonClass{
+    margin: 10px;
+}
+
+.fragment_container{
+    background-color: #fd1d1d;
+    border:2px solid red;
+}
