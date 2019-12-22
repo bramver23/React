@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import "bootstrap/dist/css/bootstrap.css";
 import NavBar from "./components/navbar";
 import Counters from './components/counters';
+import Main from "./components/main";
 
 class  App extends Component{
 
@@ -38,13 +39,17 @@ class  App extends Component{
     render(){
         return(
             <React.Fragment>
-                <NavBar totalCounters ={this.state.counters.filter(c => c.value >0).length}/> 
-                <main className="container">
+                <NavBar totalCounters ={this.state.counters.filter(c => c.value >1).length}/>   
+              
+                <div className="container">
                     <Counters counters={this.state.counters}
                               onReset={this.handleReset} 
                               onIncrement={this.handleIncrement}
                     />
-                </main>    
+                </div> 
+                <div className="">
+                    <Main/>
+                </div>
             </React.Fragment>
         );
     }

@@ -1,3 +1,6 @@
+html{
+    overflow: hidden;
+}
 .reactnavbar{
     /* background: #ECE9E6;  
     background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);  
@@ -9,9 +12,10 @@
 }    
 
 .container{
-    /* max-width: 100%; */
+    /* max-width: 90%; */
     padding-left: 0;
     padding-right:0;
+    overflow:hidden;
 }
 
 .reactMargin{
@@ -25,6 +29,16 @@
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
+}
+.groupReserved{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    /* //background-color: #fcb045; */
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #fcb045;
+    border-color: #fcb045;
 }
 
 .title_container{
@@ -42,3 +56,56 @@ span.title{
     background-color: #fd1d1d;
     border:2px solid red;
 }
+
+
+.menuList ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menuList li{
+    display: inline;
+    margin: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+a{
+    color:black;
+    font-size: 12px;
+    font-weight: bold;
+}
+.aboutClass p{
+    font-size: 18px;
+    text-align: center;
+    padding: 6px;
+    font-weight: 700;
+    margin-bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.borderAbout{
+        -webkit-box-shadow: 0 10px 6px -6px #777;
+           -moz-box-shadow: 0 10px 6px -6px #777;
+                box-shadow: 0 10px 6px -6px #777;
+}
+
+.fade-enter {
+    opacity: 0.01;
+  }
+  
+  .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+  }
+  
+  .fade-exit.fade-exit-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+  }

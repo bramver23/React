@@ -6,18 +6,16 @@ import "../css/navbar.css";
 import { Player } from 'video-react';
 
 class Counters extends Component {
- 
   render() {
     return (
-           
-      
       <div className="d-block p-2 bg-dark text-white">
            <Player
-      playsInline
-      poster="/assets/poster.png"
-      src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-    />
-     <img className="onfLogo" src={require("../images/onf.png" )}></img>
+              playsInline
+              poster="/assets/poster.png"
+              src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+            />
+
+      <img className="onfLogo" src={require("../images/onf.png" )}></img>
         {this.props.counters.map(counter => (
           <Counter
             key={counter.id}
@@ -29,11 +27,8 @@ class Counters extends Component {
             // id={counter.id}
           >
             <h1>Counter {counter.id} </h1>
-           
           </Counter>
         ))}
-                
-
       </div>
     );
   }

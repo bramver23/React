@@ -4,7 +4,6 @@ class Counter extends Component {
   //   this component is for any data that the componets needs
   //   state = {
   //     value: this.props.counter.value
-  //     // ,imageUrl: "https://picsum.photos/id/72/200/200"
   //   };
 
   styles = {
