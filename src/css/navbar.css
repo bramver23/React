@@ -61,6 +61,7 @@ span.title{
 @media (max-width: 640px){
     span.title{
         margin: 12px;
+        font-size:20px;
     }
 }
 
