@@ -1,12 +1,13 @@
 html{
     overflow: hidden;
 }
+
 .reactnavbar{
     /* background: #ECE9E6;  
     background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);  
     background: linear-gradient(to left, #FFFFFF, #ECE9E6);  */
 
-    background: #833ab4;  /* fallback for old browsers */
+    background: white;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }    
@@ -21,9 +22,11 @@ html{
 .reactMargin{
     margin:5px;
 }
+
 *{
     font-family: 'Roboto', sans-serif;
 }
+
 .title{
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
@@ -45,9 +48,17 @@ html{
     padding-top: 10px;
     padding-bottom: 5px;
 }
+
 span.title{
     margin: 30px;
 }
+
+@media (max-width: 640px){
+    span.title{
+        margin: 12px;
+    }
+}
+
 .buttonClass{
     margin: 10px;
 }
@@ -56,7 +67,6 @@ span.title{
     background-color: #fd1d1d;
     border:2px solid red;
 }
-
 
 .menuList ul{
     list-style-type: none;
@@ -86,6 +96,14 @@ a{
     left: 0;
     right: 0;
 }
+@media (max-width: 640px){
+    .aboutClass p{
+        font-size: 14px;
+        text-align: left;
+        padding: 10px;
+    }
+}
+
 .borderAbout{
         -webkit-box-shadow: 0 10px 6px -6px #777;
            -moz-box-shadow: 0 10px 6px -6px #777;
