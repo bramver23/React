@@ -1,6 +1,11 @@
 html{
     overflow: hidden;
 }
+@media (max-width: 640px){
+    html{
+    overflow: visible;
+    }
+}
 
 .reactnavbar{
     /* background: #ECE9E6;  
