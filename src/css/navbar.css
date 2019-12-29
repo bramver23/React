@@ -1,6 +1,11 @@
 html{
-    overflow: hidden;
+    /* overflow: hidden; */
 }
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
 @media (max-width: 640px){
     html{
     overflow: visible;
@@ -28,10 +33,6 @@ html{
     margin:5px;
 }
 
-*{
-    font-family: 'Roboto', sans-serif;
-}
-
 .title{
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
@@ -49,13 +50,22 @@ html{
     border-color: #fcb045;
 }
 
-.title_container{
-    padding-top: 10px;
-    padding-bottom: 5px;
+.MainContainer{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.titleContainer{
+    text-align: center;
+}
+
+.controllersContainer{
+    text-align: right;
 }
 
 span.title{
-    margin: 30px;
+    margin: 10px;
+    float:left;
 }
 
 @media (max-width: 640px){
@@ -133,3 +143,63 @@ a{
     opacity: 0.01;
     transition: opacity 300ms ease-in;
   }
+
+  .ui.labeled.button{
+      position: absolute;
+      z-index: 999;
+  }
+ 
+  .shopNow{
+    display: inline !important;
+  }
+ 
+  .hidden{
+    display: inline !important;
+  }
+
+  .aboutBtn{
+    color: #000 !important;
+    text-transform: uppercase;
+    background: #ffffff;
+    padding: .78571429em 1.5em .78571429em;
+    border: 1px solid #fc953d;
+    border-radius: 6px;
+    display: inline-block;
+  }
+
+  .aboutBtn:hover {
+    background-color: #833ab4;
+    border:1px solid #fc953d;
+    }
+
+    .controllers{
+        text-align: center;
+        border:1px solid red;
+    }
+
+    .addButton{
+        color: white !important;
+        font-weight: 700;
+        text-transform: uppercase;
+        background: grey;
+        padding: .78571429em 1.5em .78571429em;
+        border: 1px solid grey;
+        border-radius: 6px;
+        display: inline-block;
+    }
+    .addButton:active{
+        opacity: 0.8;
+    }
+    .resetButton{
+        color: white !important;
+        font-weight: 700;
+        text-transform: uppercase;
+        background: red;
+        padding: .78571429em 1.5em .78571429em;
+        border: 1px solid red;
+        border-radius: 6px;
+        display: inline-block;
+    }
+    .resetButton:active{
+        opacity: 0.8;
+    }
